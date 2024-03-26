@@ -1,0 +1,27 @@
+body{
+    background-image: url(bg.png);
+   
+}
+img{
+    width:500px;
+}
+
+h1{
+    color:blueviolet;
+    text-align: center;
+}
+
+.play{
+    position:absolute;
+    bottom: 100px;
+    right: 400px;
+    width:40px;
+}
+a{
+    position:absolute;
+    bottom: 105px;
+    right: 270px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}

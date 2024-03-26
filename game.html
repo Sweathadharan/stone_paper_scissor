@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>game</title>
+    <style>
+        body{
+            background-image: url('bg.png');
+            overflow-x: hidden;
+        }
+        .u{
+            color:white;
+            position:absolute;
+            left:250px;
+            top:120px;
+        }
+        .container{
+            position: relative;
+            bottom: -100px;
+            display: flex;
+            align-items: center;
+            justify-content:space-around;
+        }
+        
+        .you {
+        border:1px solid goldenrod;
+        height: 375px;
+        width: 350px;
+        color: aliceblue;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        padding-bottom: 10px;
+        }
+        
+        .comp{
+            color: aliceblue;
+            border:1px solid goldenrod;
+            height: 375px;
+            width: 350px;
+        }
+        .you img {
+        width:50px;
+        }
+        
+        .comp h3{
+            text-align: center;
+        }
+        .vs img{
+            height:350px;
+        }
+        .vs{
+            color: aliceblue;
+        }
+        .comp img {
+        position: relative; 
+        width:250px;
+        top:20px;
+        left:5px;
+
+        }
+         #hand {
+        position: relative; 
+        width:250px;
+        top:-150px;
+        left:-150px;
+         }
+         #pap{
+        position: relative; 
+        width:250px;
+        top:-150px;
+        left:-150px;
+        }
+        #sci{
+        position: relative; 
+        width:250px;
+        top:-150px;
+        left:-150px;
+        }
+        span{
+            position: relative;
+            font-size: 60px;
+            color:white;
+            top:-360px;
+            left:90px;
+        }
+        button{
+            padding:5px;
+            height:50px;
+            width: 120px;
+            background-color:goldenrod;
+            border-radius: 10px 10px 10px 10px;
+            position: absolute;
+            top:600px;
+            right:600px;
+            display: none;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 15px;
+            font-weight: 800;
+            color: white;
+
+             }
+        p{
+            color:white;
+            position: relative;
+            top:120px;
+            right:-600px;
+            font-size: 20px;
+            font-weight: 600;
+            
+            
+        }
+    </style>
+</head>
+<body>
+<h3 class="u">You</h3>
+    <div class="container">
+    
+            <div class="you">
+        
+        <img id="stone" src="rock-logo.png" alt="">
+        <img id="paper" src="paper-logo.png" alt="">
+        <img id="scissor" src="scissors-logo.png" alt="">
+
+        <img id="hand"src="rock-hand.png" alt="" style="display: none;">
+        <img id="pap" src="paper-hand.png" alt="" style="display: none;">
+        <img id="sci" src="scissors-hand.png" alt="" style="display: none;">
+    </div>
+    <div class="vs">
+        <span id="user-score">0</span>
+        <span>-</span>
+        <span id="comp-score">0</span>
+        <img id="vs" src="vs.png" alt="">
+
+    </div>
+    <div class="comp">
+        <h3>Comp</h3>
+        <img id="handComp"src="rock-hand.png" alt="" style="display: none;">
+        <img id="papComp" src="paper-hand.png" alt="" style="display: none;">
+        <img id="sciComp" src="scissors-hand.png" alt="" style="display: none;">
+    </div>
+</div>
+    <p id="won"></p>
+    <button id="play" type="button">Play Again</button>
+
+    <script src="index.js"></script>
+</body>
+</html>
